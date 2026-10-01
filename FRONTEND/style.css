@@ -1,0 +1,288 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+
+    background-image: url(_.jpeg) ;
+
+    background-repeat: no-repeat;
+
+    background-position: center;
+
+    background-size: cover;
+
+    min-height: 100vh;
+
+    margin: 0;
+
+    padding: 40px 20px;
+}
+
+
+/* CONTAINER PRINCIPAL */
+
+.container {
+    max-width: 700px;
+
+    background: white;
+
+    padding: 35px;
+
+    margin: auto;
+
+    border-radius: 20px;
+
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+
+    transition: transform 0.3s ease;
+}
+
+.container:hover {
+    transform: translateY(-3px);
+}
+
+
+/* FOTO DE PERFIL */
+
+.foto-perfil {
+    display: block;
+
+    width: 110px;
+    height: 110px;
+
+    object-fit: cover;
+
+    margin: 0 auto 15px;
+
+    border-radius: 50%;
+
+    border: 4px solid #a70f2b;
+
+    box-shadow: 0 5px 15px rgba(160, 7, 4, 0.4);
+
+    transition: transform 0.3s ease;
+}
+
+.foto-perfil:hover {
+    transform: scale(1.08) rotate(2deg);
+}
+
+
+/* TÍTULO */
+
+h1 {
+    text-align: center;
+
+    color: #5b21b6;
+
+    margin-bottom: 30px;
+
+    font-size: 32px;
+
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+/* FORMULÁRIO */
+
+form {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 10px;
+}
+
+
+label {
+    font-weight: bold;
+
+    color: #a41811;
+
+    margin-top: 5px;
+}
+
+
+input {
+    padding: 12px;
+
+    font-size: 16px;
+
+    border: 2px solid #091ba9;
+
+    border-radius: 8px;
+
+    outline: none;
+
+    transition: 0.3s;
+}
+
+
+input:focus {
+    border-color: #eb3b38;
+
+    box-shadow: 0 0 8px rgba(139, 92, 246, 0.25);
+}
+
+
+/* BOTÕES */
+
+button {
+    padding: 12px;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    background-color: #e11d48;
+
+    color: white;
+
+    border: none;
+
+    cursor: pointer;
+
+    border-radius: 8px;
+
+    transition: 0.3s;
+}
+
+
+button:hover {
+    background-color:#d40116;
+
+
+    transform: translateY(-2px);
+
+    box-shadow: 0 5px 12px rgba(91, 33, 182, 0.25);
+}
+
+
+button:active {
+    transform: scale(0.97);
+}
+
+
+/* BOTÃO LIMPAR */
+
+#limpar-tabela {
+    margin-top: 15px;
+
+    background-color: #e11d48;
+}
+
+
+#limpar-tabela:hover {
+    background-color: #be123c;
+}
+
+
+/* TOTAL EM ESTOQUE */
+
+#total-estoque {
+    text-align: center;
+
+    color: white;
+
+    background-color: #e11d48;
+
+    padding: 15px;
+
+    border-radius: 10px;
+
+    margin-top: 25px;
+
+    border: 1px solid #ca1d14;
+}
+
+
+/* TABELA - ESTRUTURA NÃO ALTERADA */
+
+table {
+    width: 100%;
+
+    border-collapse: collapse;
+
+    margin-top: 20px;
+
+    overflow: hidden;
+
+    border-radius: 10px;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+
+th,
+td {
+    padding: 12px;
+
+    text-align: center;
+
+    border-bottom: 1px solid #dc1b09;
+}
+
+
+th {
+    background-color: #e11d48;
+
+
+    color: white;
+}
+
+
+tbody tr {
+    transition: 0.2s;
+}
+
+
+tbody tr:hover {
+    background-color: #f3e8ff;
+
+    transform: scale(1.01);
+}
+
+
+/* BOTÃO X */
+
+.btn-excluir {
+    background-color: #ef4444;
+
+    color: white;
+
+    border: none;
+
+    padding: 7px 12px;
+
+    border-radius: 6px;
+
+    cursor: pointer;
+}
+
+
+.btn-excluir:hover {
+    background-color: #dc2626;
+}
+
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 600px) {
+
+    .container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    th,
+    td {
+        padding: 8px;
+        font-size: 13px;
+    }
+
+}
